@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
    CIS 155
    Project V1
@@ -9,7 +10,7 @@
    
    Filename: styles.css
 */
-@charset"utf-8";
+
 
 /*M2LO3 Precedence: the navigation bar ignores the inherited color from body and instead uses its own background color*/
 /*M2LO4 inline style: the navigation bar is displayed in the same line*/
