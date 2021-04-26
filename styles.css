@@ -1,0 +1,97 @@
+/*
+   CIS 155
+   Project V1
+   Website
+   
+   CSS Style Sheet 
+   Author: Anthony Bonilla
+   Date:   4/23/2021
+   
+   Filename: styles.css
+*/
+@charset"utf-8";
+
+/*M2LO3 Precedence: the navigation bar ignores the inherited color from body and instead uses its own background color*/
+/*M2LO4 inline style: the navigation bar is displayed in the same line*/
+/*M2LO6 Id selector: #siteNav is selected based upon its ID*/
+#siteNav ul li{
+    margin: 0px;
+    background-color: rgba(82, 70, 70, 0.45);
+    list-style: none;
+    display: inline;
+    font-size: 1.9em;
+    padding:5px;
+}
+
+/*M2LO7 pseudo class: first-child*/
+#siteNav ul li:first-child{
+   margin-left: -40px;
+}
+
+
+/*M2LO5 Contextual selector*/
+#siteNav > ul >li > a:link, #siteNav >ul >li >a:visited{
+    color: white;
+    text-decoration: none;
+}
+/*M2LO5 Contextual selector*/
+#siteNav > ul >li > a:hover, #siteNav >ul >li >a:active{
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    background-color: #727272;
+    margin: 0px;
+    padding: 15px;
+    font-size: 2.5em;
+}
+
+/*M2LO12 page elements: modified the margins and padding*/
+/*M2LO15 color: used color*/
+body {
+    background-color: darkgrey;
+    margin: 0px;
+    padding: 5px;
+}
+
+/*M2LO3 Inheritance: this paragraph inherits its background color from the body tag*/
+/*M2LO13 text elements: modified the fontsize and color*/
+/*M2LO14 progressive enhancement: I first used rgb colors incase a browser did not support the hsl color*/
+p{
+    font-size: 1.3em;
+    margin: 10px 50px;
+    color: rgb(82, 70, 70);
+    color: hsl(247, 11%, 16%);
+    
+}
+
+/*M2LO11 pseudo element: the first-letter is a psuedo element and in this case we are making it just a little bit bigger*/
+p::first-letter{
+    font-size: 1.4em;
+}
+
+#wpmApp img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+     
+}
+
+footer{
+    background-color: #727272;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+
+aside{
+    
+    display: block;
+}
+
+/*M2LO6 class selector: applies this font across the aboutWPM class*/
+.aboutWPM{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em
+}
