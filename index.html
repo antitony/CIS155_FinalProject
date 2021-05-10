@@ -21,13 +21,17 @@
 		<!--M1LO8 Demonstrate the use of external style sheets-->
 		<!--M2LO4 embedded styles-->
 		<link href="styles.css" rel="stylesheet" />
+		<link href="layout.css" rel="stylesheet" />
 	</head>
 	
 	<body>
+	
+	<div class="wrapper">
+		<div class="header">
 		<h1>
 			The Best Resource for Increasing Your Typing Speed!
 		</h1>
-		
+		</div>
 		<!--
 			M1LO12 Create navigation using unordered lists
 			M1LO13 site navigation
@@ -35,12 +39,29 @@
 		<div id="siteNav">	
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="improvement.html">Improvement</a></li>
 				<li><a href="about.html">About</a></li>
-
+				<li><a href="improvement.html">Improvement</a></li>
 			</ul>
 		</div>
 		
+		<aside>
+			<!--M1LO10 use of special characters: emdash -->
+			<h3>&mdash; The different texts to type from will be put here</h3>
+
+			<ul>
+				<li><a href="">Text1</a></li>
+				<li><a href="">Text2</a></li>
+				<li><a href="">Text3</a></li>
+				<li><a href="">Text4</a></li>
+				<li><a href="">Text5</a></li>
+			</ul>
+			<!--http://clipart-library.com/clipart/1874322.htm-->
+			<img src="keyboard.png" alt="keyboard"/>	
+		</aside>
+		
+		
+		
+		<div>
 		<article class="aboutWPM">
 		<p>
 			Welcome to the typing zone, your one stop shop for improving the amount of words per minute <strong>(WPM)</strong> 
@@ -49,31 +70,24 @@
 			 information on how to improve that typing speed. As of right now I am not sure how to implement my application into this 
 			 website but I am going to implement that in a future version of this project. Here is an image of what the application will look like when implemented.
 		</p>
-		
 		</article>
-
-		<aside>
-			<!--M1LO10 use of special characters: emdash -->
-			<h3>&mdash; The different texts to type from will be put here</h3>
-
-			<ol>
-				<li><a href="">Text1</a></li>
-				<li><a href="">Text2</a></li>
-				<li><a href="">Text3</a></li>
-				<li><a href="">Text4</a></li>
-				<li><a href="">Text5</a></li>
-			</ol>	
-		</aside>
-		
+		</div>
 		<!--M1LO9 Demonstrate the use of inline images -->
 		<div id="wpmApp">
-			<img src="wpmCalculator.jpg" alt="words per minute application"/>	
+			<!--M4LO1 Demonstrate the use of figure boxes (HTML)-->
+			<figure>
+				<img src="wpmCalculator.jpg" alt="words per minute application"/>	
+			<figcaption> this is my words per minute application that will be implemented</figcaption>
+			</figure>
 		</div>
 
-			
+		
+	</div>
+	<div class="footer">
 		<footer>
 			Contact Info: anthonybonilla@student.olympic.edu 
 		</footer>
+		</div>
 	</body>
 	
 </html>

@@ -1,0 +1,85 @@
+@charset "utf-8";
+/*M3LO1 Demonstrate the use of a CSS reset style sheet: this style sheet is used to reset the layout formatting
+/*
+   CIS 155
+   Project V2
+   Website
+   
+   CSS Style Sheet 
+   Author: Anthony Bonilla
+   Date:   5/9/2021
+   
+   Filename: layout.css
+*/
+/*M3LO6 Demonstrate formatting a grid*/
+.wrapper{
+	display: grid;
+	grid-template-rows: 7.5% 5% 27.5% 25%;
+	grid-template-columns: 25% 75%;
+	
+}
+/*M3LO3 Demonstrate a clearing floats*/
+.wrapper::after{
+	content: "";
+	display: block;
+	clear: block;
+}
+
+
+.header{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+/*M4LO3 Demonstrate the use of rounded corners for borders */
+.header > h1 {
+	border-radius: 25px;
+}
+
+#siteNav{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#siteNav > ul >li {
+	border-radius: 10px;
+	position: relative;
+	left: 10px;
+}
+/*M3LO8B Demonstrate relative positioning*/
+aside > ul> li{
+	position: relative;
+	left: 30px;
+	font-size: 1.6em;
+}
+/*M3LO9 Demonstrate fixed, static, or inherited positioning*/
+/*M4LO2 Demonstrate the use of background images (CSS)*/
+html{
+	background: url("darktheme.jpg") fixed;
+	
+}
+/*M3LO2 Demonstrate floating elements: used to seperate text from this element*/
+#wpmApp{
+	grid-column-start:2;
+	grid-column-end: 3;
+	float: right;
+}
+/*M3LO11 Demonstrate -prefix- style browser extensions use in CS*/
+/*M4LO5 Demonstrate the use of text or box shadowing*/
+#wpmApp > figure {
+	-webkit-box-shadow: 5px 5px 5px 5px black;
+	box-shadow: 5px 10 black;
+}
+/*M3LO8A Demonstrate absolute positioning*/
+.footer{
+	position: absoulte;
+	bottom: 0;
+	width: 100%;
+	
+}
+/*M4LO6 Demonstrate the use of opacity/transparency for images*/
+aside > img {
+	width: 65%;
+	height: auto;
+	filter: opacity(0.3);
+}

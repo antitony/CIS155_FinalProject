@@ -1,12 +1,12 @@
 @charset "utf-8";
 /*
    CIS 155
-   Project V1
+   Project V2
    Website
    
    CSS Style Sheet 
    Author: Anthony Bonilla
-   Date:   4/23/2021
+   Date:   5/9/2021
    
    Filename: styles.css
 */
@@ -17,7 +17,7 @@
 /*M2LO6 Id selector: #siteNav is selected based upon its ID*/
 #siteNav ul li{
     margin: 0px;
-    background-color: rgba(82, 70, 70, 0.45);
+    background-image: linear-gradient(to right, #283048, #859398);
     list-style: none;
     display: inline;
     font-size: 1.9em;
@@ -41,8 +41,10 @@
     text-decoration: none;
 }
 
+/*M4LO4 Demonstrate the use of gradients */
 h1{
-    background-color: #727272;
+/*https://uigradients.com/#Titanium*/
+    background-image: linear-gradient(to right, #283048, #859398);
     margin: 0px;
     padding: 15px;
     font-size: 2.5em;
@@ -52,7 +54,7 @@ h1{
 /*M2LO15 color: used color*/
 body {
     background-color: darkgrey;
-    margin: 0px;
+    margin: 15px;
     padding: 5px;
 }
 
@@ -76,6 +78,7 @@ p::first-letter{
     display: block;
     margin-left: auto;
     margin-right: auto; 
+    float: top;
      
 }
 
