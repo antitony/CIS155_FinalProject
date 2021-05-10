@@ -53,7 +53,7 @@ h1{
 /*M2LO12 page elements: modified the margins and padding*/
 /*M2LO15 color: used color*/
 body {
-    background-color: darkgrey;
+    background-color: #2F2F2F;
     margin: 15px;
     padding: 5px;
 }
@@ -64,14 +64,8 @@ body {
 p{
     font-size: 1.3em;
     margin: 10px 50px;
-    color: rgb(82, 70, 70);
-    color: hsl(247, 11%, 16%);
+    color: #000000);
     
-}
-
-/*M2LO11 pseudo element: the first-letter is a psuedo element and in this case we are making it just a little bit bigger*/
-p::first-letter{
-    font-size: 1.4em;
 }
 
 #wpmApp img{

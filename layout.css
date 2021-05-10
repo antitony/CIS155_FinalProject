@@ -53,7 +53,8 @@ aside > ul> li{
 	font-size: 1.6em;
 }
 /*M3LO9 Demonstrate fixed, static, or inherited positioning*/
-/*M4LO2 Demonstrate the use of background images (CSS)*/
+/*M4LO2 Demonstrate the use of background images*/
+/*https://wallpapercave.com/dark-theme-wallpapers*/
 html{
 	background: url("darktheme.jpg") fixed;
 	
@@ -78,8 +79,10 @@ html{
 	
 }
 /*M4LO6 Demonstrate the use of opacity/transparency for images*/
-aside > img {
+/*M4LO8 Demonstrate the use of transformations for 2D or 3D images*/
+#keyboard > img{
+	transform: rotate(5deg);
 	width: 65%;
 	height: auto;
-	filter: opacity(0.3);
+	filter: opacity(0.25);
 }
