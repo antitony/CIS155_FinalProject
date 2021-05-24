@@ -2,7 +2,7 @@
 /*M3LO1 Demonstrate the use of a CSS reset style sheet: this style sheet is used to reset the layout formatting
 /*
    CIS 155
-   Project V2
+   Project V3
    Website
    
    CSS Style Sheet 
@@ -63,26 +63,48 @@ html{
 #wpmApp{
 	grid-column-start:2;
 	grid-column-end: 3;
-	float: right;
 }
 /*M3LO11 Demonstrate -prefix- style browser extensions use in CS*/
 /*M4LO5 Demonstrate the use of text or box shadowing*/
 #wpmApp > figure {
 	-webkit-box-shadow: 5px 5px 5px 5px black;
 	box-shadow: 5px 10 black;
+	position: relative;
+	top: -50px;
+	
 }
 /*M3LO8A Demonstrate absolute positioning*/
+
 .footer{
-	position: absoulte;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	
 }
-/*M4LO6 Demonstrate the use of opacity/transparency for images*/
-/*M4LO8 Demonstrate the use of transformations for 2D or 3D images*/
-#keyboard > img{
-	transform: rotate(5deg);
-	width: 65%;
-	height: auto;
-	filter: opacity(0.25);
+/*M6LO7*/
+table, th, td{
+	border: 1px solid black;
 }
+/*M5LO3 use media queries to format a page differently*/
+@media screen and (max-width: 1100px) {
+	.wrapper{
+		display: block;
+	}	
+	#siteNav > ul> li{
+		font-size: 4em;
+	}
+}
+/*M5LO4 Use css for pull-down menus (different texts)*/
+.pulldown{
+	position: relative;
+	display: inline-block;
+}
+.pulldown-content{
+	display: none;
+	position: absolute;
+	
+}
+.pulldown:hover .pulldown-content{
+	display: block;
+}
+

@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*
    CIS 155
-   Project V2
+   Project V3
    Website
    
    CSS Style Sheet 
@@ -91,5 +91,6 @@ aside{
 /*M2LO6 class selector: applies this font across the aboutWPM class*/
 .aboutWPM{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em
+    font-size: 1.2em;
+    float: bottom;
 }
