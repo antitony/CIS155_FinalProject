@@ -69,7 +69,15 @@ p{
     color: #000000;
     
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 466d17fe90c0f3a59df29e64e45c4c7bfa100bf6
+/*M8LO12 Demonstrate how to format media with CSS*/
+=======
+
+>>>>>>> 95e378bdac8a8d009ad11ee4efb46d63c47a6178
 #wpmApp video{
     display: block;
     
@@ -101,7 +109,7 @@ aside{
 	0% {background-color: black;}
 	25% {background-color: #4C4C4C;}
 	50% {background-color: #8A8585;}
-	100% (background-color: #C7C7C7;)
+	100% {background-color: #C7C7C7;}
 }
 
 
